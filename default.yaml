@@ -23,3 +23,5 @@ giscus:
   input_position: bottom
   # Load the comments lazily
   loading: lazy
+  # Custom url
+  cdn: https://giscus.app/client.js

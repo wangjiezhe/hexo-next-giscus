@@ -5,7 +5,7 @@ document.addEventListener('page:loaded', () => {
   if (!CONFIG.page.comments) return;
 
   NexT.utils.loadComments('.giscus-container')
-    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+    .then(() => NexT.utils.getScript(CONFIG.giscus.cdn, {
       attributes: {
         async                   : true,
         crossOrigin             : 'anonymous',
